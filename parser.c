@@ -218,12 +218,12 @@ void parse_file ( char * filename,
     else if( strncmp(line, "box", strlen(line)) == 0){
       fgets(line, sizeof(line), f);
       sscanf(line, "%lf %lf %lf %lf %lf %lf", xvals, yvals, zvals, &width, &height, &depth);
-      add_box(edges, xvals[0], yvals[0], width, height, depth);
+      add_box(edges, xvals[0], yvals[0], zvals[0],width, height, depth);
     }
 
     else if( strncmp(line, "sphere", strlen(line)) == 0){
       fgets(line, sizeof(line), f);
-      sscanf(line, "%lf %lf %lf %lf", xvals, yvals, zvals, r);
+      sscanf(line, "%lf %lf %lf %lf", xvals, yvals, zvals, &r);
       add_sphere(edges, xvals[0], yvals[0], zvals[0], r, step);
     }
 
