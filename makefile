@@ -24,6 +24,10 @@ parser.o: parser.c parser.h matrix.h draw.h display.h ml6.h
 
 run: all
 	./main script
+
+farm: all
+	./main bayan
+
 clean:
 	rm main
 	rm *.o *~

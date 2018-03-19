@@ -74,9 +74,9 @@ void parse_file ( char * filename,
   char line[255];
   clear_screen(s);
   color c;
-  c.red = 0;
-  c.green = 255;
-  c.blue = 255;
+  c.red = 255;
+  c.green = 77;
+  c.blue = 77;
 
   if ( strcmp(filename, "stdin") == 0 )
     f = stdin;

@@ -1,0 +1,24 @@
+#farmhouse
+box
+200 200 200 200 200 200
+box
+200 310 250 50 50 50
+torus
+255 270 100 3 25
+torus
+255 300 100 3 40
+torus
+255 340 100 3 55
+torus
+255 390 100 3 70
+ident
+rotate
+y 20
+rotate
+z 20
+rotate
+x 20
+apply
+display
+save
+f.png
